@@ -3,7 +3,6 @@ let valMonth = document.querySelector(".month-text");
 let valCaseLink = document.querySelector(".case-link");
 let valThanksLink = document.querySelector(".thanks-link");
 
-let b = window.visualViewport.width;
 let windowInnerWidth = window.innerWidth;
 const changeValue = () => {
   if (windowInnerWidth <= 390) {
@@ -25,9 +24,6 @@ window.onresize = () => {
   changeValue();
   windowInnerWidth = newWidth;
 };
-
-console.log(windowInnerWidth);
-console.log(b);
 
 // case-link
 // thanks-link
